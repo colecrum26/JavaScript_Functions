@@ -4,12 +4,12 @@ console.log("Hello World!\n==========\n");
 console.log("EXERCISE 1:\n==========\n");
 
 function printOdds(count) {
-    if (count < 1){
-        console.log("Please enter a positive number.");
-        return;
-    }
+  if (count < 1) {
+    console.log("Please enter a positive number.");
+    return;
+  }
   for (let i = 0; i <= count; i++) {
-    if (i % 2 == 1){
+    if (i % 2 == 1) {
       console.log(i);
     }
   }
@@ -20,20 +20,19 @@ printOdds(30);
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
 
-function checkAge(userName, age){
-    let aboveSixteen = `Congrats ${userName}, you can drive!`
-    let belowSixteen = `Sorry ${userName}, but you need to wait until you're 16.`
-    // if (userName, age) {
-    //     console.log("Please enter your name and age.")
-    if (age < 16) {
-        console.log(belowSixteen);
-    } else {
-        console.log(aboveSixteen);
-    }
+function checkAge(userName, age) {
+  let aboveSixteen = `Congrats ${userName}, you can drive!`;
+  let belowSixteen = `Sorry ${userName}, but you need to wait until you're 16.`;
+  // if (userName, age) {
+  //     console.log("Please enter your name and age.")
+  if (age < 16) {
+    console.log(belowSixteen);
+  } else {
+    console.log(aboveSixteen);
+  }
 }
 
-
-checkAge("JPJ", 21)
+checkAge("JPJ", 21);
 
 // Exercise 3 Section
 console.log("EXERCISE 3:\n==========\n");
