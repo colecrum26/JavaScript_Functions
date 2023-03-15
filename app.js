@@ -38,20 +38,29 @@ console.log("Hello World!\n==========\n");
 // Exercise 3 Section
 console.log("EXERCISE 3:\n==========\n");
 
-function whichQuadrant(x, y){
-    let quadrant1 = "Your point is in Quadrant 1.";
-    let quadrant2 = "Your point is in Quadrant 2.";
-    let quadrant3 = "Your point is in Quadrant 3.";
-    let quadrant4 = "Your point is in Quadrant 4.";
-    if (x > 0 && y > 0){
-        console.log(quadrant1);
-    } else if (x < 0 && y > 0){
-        console.log(quadrant2);
-    } else if (x < 0 && y < 0){
-        console.log(quadrant3);
+function whichQuadrant(x, y) {
+  let quadrant1 = "Your point is in Quadrant 1.";
+  let quadrant2 = "Your point is in Quadrant 2.";
+  let quadrant3 = "Your point is in Quadrant 3.";
+  let quadrant4 = "Your point is in Quadrant 4.";
+  if (x == 0 && y == 0) {
+    console.log("Your point is at the origin.");
+  } else if (x == 0 || y == 0) {
+    if (x == 0) {
+      console.log("Your point is on the y axis.");
     } else {
-        console.log(quadrant4);
+      console.log("Your point is on the x axis.");
     }
+  }
+  if (x > 0 && y > 0) {
+    console.log(quadrant1);
+  } else if (x < 0 && y > 0) {
+    console.log(quadrant2);
+  } else if (x < 0 && y < 0) {
+    console.log(quadrant3);
+  } else if (x > 0 && y < 0) {
+    console.log(quadrant4);
+  }
 }
 
-whichQuadrant();
+whichQuadrant(0, 5);
