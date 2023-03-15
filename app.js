@@ -18,19 +18,40 @@ console.log("Hello World!\n==========\n");
 // printOdds(-30);
 
 // Exercise 2 Section
-console.log("EXERCISE 2:\n==========\n");
+// console.log("EXERCISE 2:\n==========\n");
 
-function checkAge(userName, age){
-    let aboveSixteen = `Congrats ${userName}, you can drive!`
-    let belowSixteen = `Sorry ${userName}, but you need to wait until you're 16.`
-    if (userName, age) {
-        console.log("Please enter your name and age.")
-    }
-    else if (age < 16) {
-        console.log(belowSixteen);
+// function checkAge(userName, age){
+//     let aboveSixteen = `Congrats ${userName}, you can drive!`
+//     let belowSixteen = `Sorry ${userName}, but you need to wait until you're 16.`
+//     if (userName, age) {
+//         console.log("Please enter your name and age.")
+//     }
+//     else if (age < 16) {
+//         console.log(belowSixteen);
+//     } else {
+//         console.log(aboveSixteen);
+//     }
+// }
+
+// checkAge()
+
+// Exercise 3 Section
+console.log("EXERCISE 3:\n==========\n");
+
+function whichQuadrant(x, y){
+    let quadrant1 = "Your point is in Quadrant 1.";
+    let quadrant2 = "Your point is in Quadrant 2.";
+    let quadrant3 = "Your point is in Quadrant 3.";
+    let quadrant4 = "Your point is in Quadrant 4.";
+    if (x > 0 && y > 0){
+        console.log(quadrant1);
+    } else if (x < 0 && y > 0){
+        console.log(quadrant2);
+    } else if (x < 0 && y < 0){
+        console.log(quadrant3);
     } else {
-        console.log(aboveSixteen);
+        console.log(quadrant4);
     }
 }
 
-checkAge()
+whichQuadrant();
