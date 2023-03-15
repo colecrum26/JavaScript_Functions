@@ -36,31 +36,47 @@ console.log("Hello World!\n==========\n");
 // checkAge()
 
 // Exercise 3 Section
-console.log("EXERCISE 3:\n==========\n");
+// console.log("EXERCISE 3:\n==========\n");
 
-function whichQuadrant(x, y) {
-  let quadrant1 = "Your point is in Quadrant 1.";
-  let quadrant2 = "Your point is in Quadrant 2.";
-  let quadrant3 = "Your point is in Quadrant 3.";
-  let quadrant4 = "Your point is in Quadrant 4.";
-  if (x == 0 && y == 0) {
-    console.log("Your point is at the origin.");
-  } else if (x == 0 || y == 0) {
-    if (x == 0) {
-      console.log("Your point is on the y axis.");
-    } else {
-      console.log("Your point is on the x axis.");
-    }
-  }
-  if (x > 0 && y > 0) {
-    console.log(quadrant1);
-  } else if (x < 0 && y > 0) {
-    console.log(quadrant2);
-  } else if (x < 0 && y < 0) {
-    console.log(quadrant3);
-  } else if (x > 0 && y < 0) {
-    console.log(quadrant4);
+// function whichQuadrant(x, y) {
+//   let quadrant1 = "Your point is in Quadrant 1.";
+//   let quadrant2 = "Your point is in Quadrant 2.";
+//   let quadrant3 = "Your point is in Quadrant 3.";
+//   let quadrant4 = "Your point is in Quadrant 4.";
+//   if (x == 0 && y == 0) {
+//     console.log("Your point is at the origin.");
+//   } else if (x == 0 || y == 0) {
+//     if (x == 0) {
+//       console.log("Your point is on the y axis.");
+//     } else {
+//       console.log("Your point is on the x axis.");
+//     }
+//   }
+//   if (x > 0 && y > 0) {
+//     console.log(quadrant1);
+//   } else if (x < 0 && y > 0) {
+//     console.log(quadrant2);
+//   } else if (x < 0 && y < 0) {
+//     console.log(quadrant3);
+//   } else if (x > 0 && y < 0) {
+//     console.log(quadrant4);
+//   }
+// }
+
+// whichQuadrant(0, 5);
+
+// Exercise 4 Section
+
+function triangle(a, b, c) {
+  if (a + b <= c || b + c <= a || c + a <= b) {
+    console.log("Invalid triangle.");
+  } else if (a === b && b === c) {
+    console.log("Equilateral triangle.");
+  } else if (a === b || b === c || a === c) {
+    console.log("Isosceles triangle.");
+  } else {
+    console.log("Scalene triangle.");
   }
 }
 
-whichQuadrant(0, 5);
+triangle(2, 1, 4);
