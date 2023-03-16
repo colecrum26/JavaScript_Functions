@@ -15,7 +15,7 @@ function printOdds(count) {
   }
 }
 
-// printOdds(30);
+printOdds(30);
 
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
@@ -34,7 +34,7 @@ function checkAge(userName, age) {
   }
 }
 
-// checkAge("JPJ", 21);
+checkAge("JPJ", 21);
 
 // Exercise 3 Section
 console.log("EXERCISE 3:\n==========\n");
@@ -64,7 +64,7 @@ function whichQuadrant(x, y) {
   }
 }
 
-// whichQuadrant(-1, 5);
+whichQuadrant(-1, 5);
 
 // Exercise 4 Section
 console.log("EXERCISE 4:\n==========\n");
@@ -81,7 +81,7 @@ function triangle(a, b, c) {
   }
 }
 
-// triangle(3, 3, 3);
+triangle(3, 3, 3);
 
 // BONUS Exercise 5 Section
 console.log("BONUS EXERCISE 5:\n==========\n");
@@ -98,14 +98,14 @@ function planStatus(planLimit, day, usage) {
   console.log(`Average expected daily use: ${avgUse} GB/day`);
   if (dayUse > avgUse && usage < planLimit) {
     console.log(
-      `You are EXCEEDING the average expected daily use at ${dayUse} GB/day. You have ${dataRem} GB left for the plan. Continuing this high usage, 
-you'll exceed your data plan by ${expUsage} GB. To stay below your plan, use no more than ${planRem} GB/day.`);
+      `You are EXCEEDING the average expected daily use at ${dayUse.toFixed(2)} GB/day. You have ${dataRem.toFixed(1)} GB left for the plan. Continuing this high usage, 
+you'll exceed your data plan by ${expUsage.toFixed(1)} GB. To stay below your plan, use no more than ${planRem.toFixed(2)} GB/day.`);
   } else if (dayUse == avgUse) {
     console.log(
-      `You are RIGHT ON the average daily use under the plan. You have ${dataRem} GB left for the plan. Continue this usage to stay in line with the data plan.`);
+      `You are RIGHT ON the average daily use under the plan. You have ${dataRem.toFixed(1)} GB left for the plan. Continue this usage to stay in line with the data plan.`);
   } else if (dayUse < avgUse) {
     console.log(
-      `You are BELOW the average daily use. You have ${dataRem} GB left for the plan. You may continue at the current usage or move up to ${planRem} GB/day.`
+      `You are BELOW the average daily use. You have ${dataRem.toFixed(1)} GB left for the plan. You may continue at the current usage or move up to ${planRem.toFixed(2)} GB/day.`
     );
   } else {
     console.log(
@@ -114,4 +114,4 @@ you'll exceed your data plan by ${expUsage} GB. To stay below your plan, use no 
   }
 }
 
-planStatus(100, 15, 25);
+planStatus(100, 15, 56);
